@@ -1,0 +1,155 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, #862c62, #5c368c);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type='text'] {
+  padding: 12px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+input[type='text']::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input[type='text']:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ff80bf;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #ff80bf;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  width: 200px;
+  
+}
+
+button:hover {
+  background-color: #9d4edd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btn-active {
+  background-color: #35774c;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  width: 200px;
+  height: 60px;
+
+  padding: 12px 24px;
+}
+
+#btn-inactive {
+  background-color: #4b0d4c;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  width: 200px;
+  height: 60px;
+
+  padding: 12px 24px;
+}
+
+
+#buttonP {
+  background-color: #ff80bf;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  width: 200px;
+  margin-top: 100px;
+  padding: 12px 24px;
+}
+
+#div-car,
+#div-car-status,
+#div-new-trip,
+#div-init-trip,
+#btn-finish-trip {
+  display: none;
+}
+
+.trip-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.trip-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#plate {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}

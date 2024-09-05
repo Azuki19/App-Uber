@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DriversLogin</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="container" id="div-login">
+			<h1>Welcome to Uber, Let's login!</h1>
+			<form id="form-login">
+				<input type="text" id="name" name="name" placeholder="Enter your name" required />
+				<button type="submit">Login</button>
+			</form>
+		</div>
+
+
+<div class="container" id="div-car">
+	<h1>Select vehicle</h1>
+	<form id="form-car">
+		<label for="plate">Select a car to start:</label>
+		<select id="plate" name="plate" required>
+			<option value="" disabled selected></option>
+			<option value="ABC123">ABC123</option>
+			<option value="XYZ789">XYZ789</option>
+			<option value="LMN456">LMN456</option>
+		</select>
+		<button id="buttonP"  type="submit">Next</button>
+	</form>
+</div>
+
+
+
+		<div class="container" id="div-car-status">
+			<h1 id="h1-car-status"></h1>
+			<div>
+				<button id="btn-active">Activate Car</button>
+			</div>
+			<div>
+				<button id="btn-inactive">Desactivate Car</button>
+			</div>
+			<div>
+				<p id="p-car-status"></p>
+			</div>
+		</div>
+
+		<div class="container" id="div-new-trip">
+			<h1>New Trip</h1>
+			<div id="trips"></div>
+		</div>
+
+		<div class="container" id="div-init-trip">
+			<h1>Trip in  progress...</h1>
+			<div id="info-trip"></div>
+			<div>
+				<button id="btn-init-trip" type="button">Start trip</button>
+				<button id="btn-finish-trip" type="button">Finish</button>
+			</div>
+			<br />
+			<p id="p-init-trip"></p>
+		</div>
+
+		<script
+			src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+			integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>
